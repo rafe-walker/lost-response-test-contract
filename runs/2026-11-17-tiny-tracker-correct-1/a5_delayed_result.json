@@ -1,5 +1,27 @@
 {
   "assertion": "A5",
+  "checks": {
+    "recovery": {
+      "committed_digest": null,
+      "k_only_http_status": 404,
+      "reason": "no committed digest was recorded independently at plant time, so there is nothing to compare the recovered outcome against",
+      "recovered_digest": null,
+      "run_id": {
+        "note": "diagnostic evidence only; the run-id lookup does not gate the recovery verdict",
+        "run_id_digest_equal": false,
+        "run_id_digest_served": null,
+        "run_id_http_status": 200
+      },
+      "score": "unproven"
+    },
+    "retry_protection": {
+      "effect_count_after_identical": null,
+      "effect_count_before": null,
+      "effect_count_final": null,
+      "reason": "no recorded before/after effect counts or delayed retry records, so retry protection is not evidenced",
+      "score": "unproven"
+    }
+  },
   "delayed_leg_run_at": "2026-11-18T02:16:00.934532Z",
   "legs": {
     "k_only_direct_lookup": {
@@ -55,6 +77,27 @@
     "session_id": "lr-409891e807-a1",
     "system_name": "tiny-tracker 0.1.0, correct build (local, 127.0.0.1)"
   },
-  "reason": "scored from the delayed run-id digest equality and the K-only lookup, exactly as observed; see a5_delayed_result.json",
-  "score": "fail"
+  "reason": "A5 scored by score_a5 from recorded observations only: recovery: unproven \u2014 no committed digest was recorded independently at plant time, so there is nothing to compare the recovered outcome against; retry protection: unproven \u2014 no recorded before/after effect counts or delayed retry records, so retry protection is not evidenced; see a5_delayed_result.json",
+  "recovery": {
+    "committed_digest": null,
+    "k_only_http_status": 404,
+    "reason": "no committed digest was recorded independently at plant time, so there is nothing to compare the recovered outcome against",
+    "recovered_digest": null,
+    "run_id": {
+      "note": "diagnostic evidence only; the run-id lookup does not gate the recovery verdict",
+      "run_id_digest_equal": false,
+      "run_id_digest_served": null,
+      "run_id_http_status": 200
+    },
+    "score": "unproven"
+  },
+  "rescored_with": "score_a5 (zambodotdev/lost-response-test-contract#3), applied to the archived observations in this directory; no new network calls, no dispatch. The legs, plant and delayed_leg_run_at fields are the original raw observations, unchanged.",
+  "retry_protection": {
+    "effect_count_after_identical": null,
+    "effect_count_before": null,
+    "effect_count_final": null,
+    "reason": "no recorded before/after effect counts or delayed retry records, so retry protection is not evidenced",
+    "score": "unproven"
+  },
+  "score": "unproven"
 }
