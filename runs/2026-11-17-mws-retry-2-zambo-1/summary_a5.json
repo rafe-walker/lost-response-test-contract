@@ -1,0 +1,82 @@
+{
+  "K": "lr-op-d99166563b-a1",
+  "assertion": "A5",
+  "committed_digest": "sha256:b57197d5333af492c73260784de351c587545b6837ddab98500386714d931b87",
+  "committed_receipt_id": "2e9ebf1f-5743-48de-a34b-5b3584c4c102",
+  "delayed_leg_run_at": "2026-11-18T21:30:41.691798Z",
+  "due_at": "2026-11-18T20:58:24.102801Z",
+  "endpoint": "https://zambo.dev/mcp",
+  "evidence_files": [
+    "a5_delayed_result.json",
+    "a5_delayed_runid_receipt.json",
+    "a5_delayed_extra.json",
+    "a5_delayed_extra_initialize.json",
+    "a5_delayed_konly_run_lookup.json",
+    "a5_delayed_konly_continuity_get_recent.json",
+    "count_a5_delayed_before_protection.json",
+    "count_a5_delayed_final.json",
+    "a5_delayed_retry_identical.json",
+    "a5_delayed_retry_mismatched.json",
+    "a5_delayed_extra_probe.py"
+  ],
+  "k_only_recovery": {
+    "continuity_fresh_client": {
+      "note": "With the fresh client's new caller_handle, continuity_get_recent with K as the only identifier returned the original receipt id and the committed digest (a5_delayed_konly_continuity_get_recent.json).",
+      "response_class": "success",
+      "returned_committed_outcome": true
+    },
+    "direct_lookup": {
+      "digest_equal_to_committed": true,
+      "digests": {
+        "input_hash": "sha256:5dd57fc7f38955c23fa83ae2652308adb944f19519fbf8c2f39b53208243cb4e",
+        "output_hash": "sha256:b57197d5333af492c73260784de351c587545b6837ddab98500386714d931b87"
+      },
+      "http_status": 200
+    },
+    "harness_delayed_leg_score": "pass",
+    "observed": "pass",
+    "recovered_digest_equal_to_committed": true,
+    "run_id_leg": {
+      "digest_equal": true,
+      "digest_served": "sha256:b57197d5333af492c73260784de351c587545b6837ddab98500386714d931b87",
+      "http_status": 200,
+      "recomputation_status": "matched"
+    }
+  },
+  "planted_at": "2026-11-17T20:58:24.102768Z",
+  "protection": {
+    "count_before": 1,
+    "count_final": 1,
+    "execution_receipt_ids_before": [
+      "2e9ebf1f-5743-48de-a34b-5b3584c4c102"
+    ],
+    "execution_receipt_ids_final": [
+      "2e9ebf1f-5743-48de-a34b-5b3584c4c102"
+    ],
+    "identical_retry": {
+      "executed_fresh": false,
+      "idempotent_replay": true,
+      "note": "Success as a replay of the original receipt (idempotent_replay: true, original receipt 2e9ebf1f-5743-48de-a34b-5b3584c4c102, sequence 1); no new execution, count stayed 1. Sent by a fresh client after the 2026-11-18 key-binding fix (job_id + parameter digest), which binds replay protection to the operation key instead of the caller_handle alone.",
+      "receipt_ids": [
+        "2e9ebf1f-5743-48de-a34b-5b3584c4c102"
+      ],
+      "response_class": "success"
+    },
+    "mismatched_retry": {
+      "executed": false,
+      "note": "tool_error:idempotency_conflict, executed: false; its receipt 6f10bb98-a9df-4ab4-b56e-9af11c3bb1ae is a refusal record (step status rejected_before_execution) and is not counted as an execution.",
+      "receipt_ids": [
+        "6f10bb98-a9df-4ab4-b56e-9af11c3bb1ae"
+      ],
+      "response_class": "tool_error:idempotency_conflict"
+    },
+    "observed": "pass",
+    "protected": true
+  },
+  "run": "2026-11-17-mws-retry-2-zambo-1",
+  "score": "pass",
+  "score_basis": "Pass only if K-only recovery after the delay returns the committed outcome with digest equal to sha256:b57197d5333af492c73260784de351c587545b6837ddab98500386714d931b87 AND the operation identity stayed protected during the window (neither delayed retry executes; effect count stays 1; identical retry replays or is refused; modified-parameter retry is refused as a conflict). Both conditions were met as observed.",
+  "scored_at": "2026-11-18T21:32:46.290077Z",
+  "session_id": "lr-d99166563b-a1",
+  "system_name": "Zambo production"
+}

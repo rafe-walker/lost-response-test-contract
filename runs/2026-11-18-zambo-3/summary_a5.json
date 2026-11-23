@@ -1,0 +1,208 @@
+{
+  "K": "lr-op-bb150ceec1-a1",
+  "assertion": "A5",
+  "committed_digest": "sha256:c63fbfb9a34b33df4e5d2d821186ba7020c7e67217d8f80958b228710f106818",
+  "committed_receipt_id": "e2568939-b651-4150-b059-a1eeebbf7319",
+  "counter_correction": {
+    "buggy_count_before": 0,
+    "buggy_count_final": 0,
+    "canonical_count_before": 1,
+    "canonical_count_final": 1,
+    "live_recount": 1,
+    "note": "First pass used client.count_effects() (receipt_id-keyed search) and returned 0/0; recount from the same saved raw snapshots with the contract canonical counter (fixtures/harness/adapters/zambo.py count_effects: journal_log tool + success step per child public record). No probe was re-sent for the recount; the live adapter recount is an additional read-only cross-check."
+  },
+  "delayed_leg_run_at": "2026-11-19T18:46:48.987026Z",
+  "due_at": "2026-11-19T18:38:16.846509Z",
+  "endpoint": "https://zambo.dev/mcp",
+  "evidence_files": [
+    "a5_delayed_count_after.json",
+    "a5_delayed_count_before.json",
+    "a5_delayed_extra.json",
+    "a5_delayed_initialize.json",
+    "a5_delayed_konly_continuity_get_recent.json",
+    "a5_delayed_konly_run_lookup.json",
+    "a5_delayed_mismatched_receipt_d33fc9a7-7f3a-405f-bd98-6dce72983beb.json",
+    "a5_delayed_probe.py",
+    "a5_delayed_recount.py",
+    "a5_delayed_recount_initialize.json",
+    "a5_delayed_retry_identical.json",
+    "a5_delayed_retry_mismatched.json",
+    "a5_delayed_runid_receipt.json",
+    "count_a5_delayed_before_protection.json",
+    "count_a5_delayed_final.json",
+    "count_a5_delayed_recount.json",
+    "enum_a5_delayed_recount_workflow_close.json"
+  ],
+  "initialize_http": 200,
+  "k_only_recovery": {
+    "continuity_fresh_client": {
+      "has_committed_digest": true,
+      "has_original_receipt_id": true,
+      "response_class": "success",
+      "returned_committed_outcome": true
+    },
+    "direct_lookup": {
+      "commitment": {},
+      "digest_equal_to_committed": true,
+      "digests": {
+        "input_hash": "sha256:9678cb09e9efdfedd97107ce9c816cf2e7fb03f334ff46ac47ad1150270c65b5",
+        "output_hash": "sha256:c63fbfb9a34b33df4e5d2d821186ba7020c7e67217d8f80958b228710f106818"
+      },
+      "http_status": 200
+    },
+    "observed": "pass",
+    "recovered_digest_equal_to_committed": true,
+    "run_id_leg": {
+      "digest_equal": true,
+      "digest_served": "sha256:c63fbfb9a34b33df4e5d2d821186ba7020c7e67217d8f80958b228710f106818",
+      "http_status": 200,
+      "verification_status": "verified"
+    }
+  },
+  "protection": {
+    "attributed_children_before": [
+      {
+        "counted_as_target_execution": true,
+        "output_hash": "sha256:c63fbfb9a34b33df4e5d2d821186ba7020c7e67217d8f80958b228710f106818",
+        "receipt_id": "e2568939-b651-4150-b059-a1eeebbf7319",
+        "resolves_in_public_record": true,
+        "step_status": "success",
+        "tools": [
+          "journal_log"
+        ]
+      },
+      {
+        "counted_as_target_execution": false,
+        "output_hash": "sha256:90681754999f7d53523172e83405e3a7b72a4f4008f8252abf9ae572ecffc01c",
+        "receipt_id": "f07bd1c2-fda4-4348-92e2-3d3d638af13f",
+        "resolves_in_public_record": true,
+        "step_status": "success",
+        "tools": [
+          "workflow_close"
+        ]
+      },
+      {
+        "counted_as_target_execution": false,
+        "output_hash": "sha256:cf0ba49914fb6bc071d1af4166fd63959c646888f1a21af5cdc01a3860b1c681",
+        "receipt_id": "a35a5d03-76fc-48bc-b60e-430a8db6444e",
+        "resolves_in_public_record": true,
+        "step_status": "rejected_before_execution",
+        "tools": [
+          "journal_log"
+        ]
+      },
+      {
+        "counted_as_target_execution": false,
+        "output_hash": "sha256:fc62374d503647c33b39b5d01296d25bf134fd62c5cdba5bf2ff2691e60d2904",
+        "receipt_id": "0cb38cb5-008a-4aad-881c-79d289ebcaaa",
+        "resolves_in_public_record": true,
+        "step_status": "success",
+        "tools": [
+          "workflow_close"
+        ]
+      }
+    ],
+    "attributed_children_final": [
+      {
+        "counted_as_target_execution": true,
+        "output_hash": "sha256:c63fbfb9a34b33df4e5d2d821186ba7020c7e67217d8f80958b228710f106818",
+        "receipt_id": "e2568939-b651-4150-b059-a1eeebbf7319",
+        "resolves_in_public_record": true,
+        "step_status": "success",
+        "tools": [
+          "journal_log"
+        ]
+      },
+      {
+        "counted_as_target_execution": false,
+        "output_hash": "sha256:90681754999f7d53523172e83405e3a7b72a4f4008f8252abf9ae572ecffc01c",
+        "receipt_id": "f07bd1c2-fda4-4348-92e2-3d3d638af13f",
+        "resolves_in_public_record": true,
+        "step_status": "success",
+        "tools": [
+          "workflow_close"
+        ]
+      },
+      {
+        "counted_as_target_execution": false,
+        "output_hash": "sha256:cf0ba49914fb6bc071d1af4166fd63959c646888f1a21af5cdc01a3860b1c681",
+        "receipt_id": "a35a5d03-76fc-48bc-b60e-430a8db6444e",
+        "resolves_in_public_record": true,
+        "step_status": "rejected_before_execution",
+        "tools": [
+          "journal_log"
+        ]
+      },
+      {
+        "counted_as_target_execution": false,
+        "output_hash": "sha256:fc62374d503647c33b39b5d01296d25bf134fd62c5cdba5bf2ff2691e60d2904",
+        "receipt_id": "0cb38cb5-008a-4aad-881c-79d289ebcaaa",
+        "resolves_in_public_record": true,
+        "step_status": "success",
+        "tools": [
+          "workflow_close"
+        ]
+      },
+      {
+        "counted_as_target_execution": false,
+        "output_hash": "sha256:c292be55a7146b9aa68876b8cfc9ced13d865fb468b0bac8bf658d20c7021c2b",
+        "receipt_id": "c10172a6-e734-4784-9684-b1cc3e59be45",
+        "resolves_in_public_record": true,
+        "step_status": "success",
+        "tools": [
+          "workflow_close"
+        ]
+      },
+      {
+        "counted_as_target_execution": false,
+        "output_hash": "sha256:bde6e132ba804bde34108e54152370d48aa79762e8ab50b3bf2c0636554a9ad4",
+        "receipt_id": "d33fc9a7-7f3a-405f-bd98-6dce72983beb",
+        "resolves_in_public_record": true,
+        "step_status": "rejected_before_execution",
+        "tools": [
+          "journal_log"
+        ]
+      }
+    ],
+    "count_before": 1,
+    "count_final": 1,
+    "execution_receipt_ids_before": [
+      "e2568939-b651-4150-b059-a1eeebbf7319"
+    ],
+    "execution_receipt_ids_final": [
+      "e2568939-b651-4150-b059-a1eeebbf7319"
+    ],
+    "identical_retry": {
+      "executed_fresh": false,
+      "note": "Success as a replay of the original receipt e2568939 with the idempotent_replay marker; no new execution.",
+      "receipt_ids": [
+        "e2568939-b651-4150-b059-a1eeebbf7319"
+      ],
+      "replay_marker": true,
+      "replays_original": true,
+      "response_class": "success"
+    },
+    "mismatched_retry": {
+      "note": "Refused before execution: raw body error.code idempotency_conflict, executed false, outcome rejected_before_execution, receipt_type pre_execution_rejection ('This operation key is already bound to different parameters. No journal entry was added'). Refusal receipt d33fc9a7 resolves with tools [journal_log] but step rejected_before_execution, so the canonical counter does not count it as an execution.",
+      "receipt_ids": [
+        "d33fc9a7-7f3a-405f-bd98-6dce72983beb"
+      ],
+      "refused_as_conflict": true,
+      "replay_marker": false,
+      "response_class": "tool_error:idempotency_conflict"
+    },
+    "new_children_after_retries": [
+      "c10172a6-e734-4784-9684-b1cc3e59be45",
+      "d33fc9a7-7f3a-405f-bd98-6dce72983beb"
+    ],
+    "observed": "pass",
+    "protected": true
+  },
+  "rescored_at": "2026-11-19T18:53:01.980539Z",
+  "run": "2026-11-18-zambo-3",
+  "score": "pass",
+  "score_basis": "Pass only if K-only recovery after the delay returns the committed outcome with digest equal to the committed digest AND the operation identity stayed protected during the window (neither delayed retry executes; effect count stays 1; identical retry replays; modified-parameter retry is refused as a conflict).",
+  "scored_at": "2026-11-19T18:53:01.980515Z",
+  "session_id": "lr-bb150ceec1-a1",
+  "system_name": "Zambo production"
+}

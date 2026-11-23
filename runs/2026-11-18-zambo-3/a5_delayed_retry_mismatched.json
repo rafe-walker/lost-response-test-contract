@@ -1,0 +1,142 @@
+{
+  "id": "86b9a9eb30be409d914ec446",
+  "jsonrpc": "2.0",
+  "result": {
+    "_meta": {
+      "dev.zambo/receipt": {
+        "id": "d33fc9a7-7f3a-405f-bd98-6dce72983beb",
+        "output_hash": "sha256:bde6e132ba804bde34108e54152370d48aa79762e8ab50b3bf2c0636554a9ad4",
+        "run_url": "https://zambo.dev/run/d33fc9a7-7f3a-405f-bd98-6dce72983beb"
+      }
+    },
+    "_receipt": {
+      "anchor": {
+        "envelope": {
+          "anchored_at": "2026-11-19T18:47:06.865Z",
+          "evidence_byte_length": null,
+          "evidence_sha256": null,
+          "evidence_url": null,
+          "output_sha256": "sha256:bde6e132ba804bde34108e54152370d48aa79762e8ab50b3bf2c0636554a9ad4",
+          "receipt_uuid": "d33fc9a7-7f3a-405f-bd98-6dce72983beb",
+          "schema_version": "zambo-receipt-anchor/1"
+        },
+        "envelope_bytes": "{\"anchored_at\":\"2026-11-19T18:47:06.865Z\",\"evidence_byte_length\":null,\"evidence_sha256\":null,\"evidence_url\":null,\"output_sha256\":\"sha256:bde6e132ba804bde34108e54152370d48aa79762e8ab50b3bf2c0636554a9ad4\",\"receipt_uuid\":\"d33fc9a7-7f3a-405f-bd98-6dce72983beb\",\"schema_version\":\"zambo-receipt-anchor/1\"}",
+        "event_id": "0b725cf59a933289ce1e6252519c40294c5dcbc293ff83edf8e96a26391cd6e5",
+        "pubkey": "e13475107d30c918ec664adf2ab1141024a22fb35190f82c9e933704fa49af41",
+        "relays": [
+          "wss://relay.primal.net"
+        ],
+        "schema_version": "zambo-receipt-anchor/1",
+        "status": "pending"
+      },
+      "audit": "https://zambo.dev/run/d33fc9a7-7f3a-405f-bd98-6dce72983beb",
+      "auth_scope": "public",
+      "caller": {
+        "id": "sha256:7fe4ce38fbc3187b8a27251ebcb3ddd6e81e41dfcbbae946ad69e80426995341",
+        "type": "session"
+      },
+      "canonical_byte_length": 1045,
+      "canonical_bytes": "eyJjYWxsZXIiOnsiaWQiOiJzaGEyNTY6N2ZlNGNlMzhmYmMzMTg3YjhhMjcyNTFlYmNiM2RkZDZlODFlNDFkZmNiYmFlOTQ2YWQ2OWU4MDQyNjk5NTM0MSIsInR5cGUiOiJzZXNzaW9uIn0sImlzc3Vlcl9jbGFpbXMiOnsicHJvdmVuYW5jZV9jbGFzcyI6Ik9CU0VSVkVEIFZJQSBHQVRFV0FZIn0sIm91dHB1dCI6eyJhcmd1bWVudHNfcmVjZWl2ZWQiOnsiYWN0aW9uIjoibG9zdF9yZXNwb25zZV9wcm9iZV9hbHRlcmVkIiwiZXhlY3V0b3JfaWRlbnRpdHkiOiJsb3N0LXJlc3BvbnNlLWhhcm5lc3MiLCJpbnB1dHMiOnsib3BlcmF0aW9uIjoiW3ByaXZhdGVdIn19LCJlcnJvciI6eyJjb2RlIjoiaWRlbXBvdGVuY3lfY29uZmxpY3QiLCJtZXNzYWdlIjoiVGhpcyBvcGVyYXRpb24ga2V5IGlzIGFscmVhZHkgYm91bmQgdG8gZGlmZmVyZW50IHBhcmFtZXRlcnMuIE5vIGpvdXJuYWwgZW50cnkgd2FzIGFkZGVkOyB1c2UgYSBuZXcgam9iX2lkIGZvciBhIGRpZmZlcmVudCBvcGVyYXRpb24uIn0sImV4ZWN1dGVkIjpmYWxzZSwiaW5wdXRfaGFzaCI6InNoYTI1NjpiMjM0ZGYyOTU2MDgyZGMxNTQ1MjAzM2IwMzc4MDQwODFjZjcyMzc3ZjNmYjE4ZTBhNTM4M2QzZjkzOTVmY2Y2IiwiaW5wdXRfaGFzaF9sYXlvdXQiOiJ6YW1iby1qc29uLXNvcnRlZC1rZXlzLXV0ZjgtdjEiLCJvdXRjb21lIjoicmVqZWN0ZWRfYmVmb3JlX2V4ZWN1dGlvbiIsInJlY2VpcHRfdHlwZSI6InByZV9leGVjdXRpb25fcmVqZWN0aW9uIiwicmVxdWVzdGVkX3Rvb2wiOiJqb3VybmFsX2xvZyJ9LCJyZWNlaXB0X3NjaGVtYV92ZXJzaW9uIjoiMC40Iiwic2lkZV9lZmZlY3RzIjp7ImRlY2xhcmF0aW9uX2hhc2giOiJzaGEyNTY6ZGZiNDQxMmFhNDI5ZDNhYzYzN2EwNTY2OGM0MzViY2M5MGEyNTEzNjNmY2RkNDlmN2I4NWFlNGFiNTViNWJjOSIsImRlY2xhcmVkIjpbInN0YXRlX3dyaXRlIl0sInNjaGVtYV92ZXJzaW9uIjoiemFtYm8tc2lkZS1lZmZlY3RzLzEifSwidG9vbCI6eyJuYW1lIjoiam91cm5hbF9sb2ciLCJzY29wZSI6InB1YmxpYyIsInZlcnNpb24iOiI0LjEuNCJ9fQ==",
+      "execution_context": {
+        "environment": "zambo.dev hosted MCP"
+      },
+      "execution_status": "observed_via_gateway",
+      "free_limit": 0,
+      "free_remaining": 0,
+      "free_used": 0,
+      "hash_algorithm": "sha256",
+      "id": "d33fc9a7-7f3a-405f-bd98-6dce72983beb",
+      "input_hash": "sha256:b234df2956082dc15452033b037804081cf72377f3fb18e0a5383d3f9395fcf6",
+      "input_hash_layout": "zambo-json-sorted-keys-utf8-v1",
+      "metadata_hash": "sha256:5e8961fec6e683151347c3cc6e63f057a35707558f6d2dd38164f0995025c3b2",
+      "metered_bucket": "free_20",
+      "metered_limit": 0,
+      "metered_remaining": 0,
+      "metered_used": 0,
+      "output_hash": "sha256:bde6e132ba804bde34108e54152370d48aa79762e8ab50b3bf2c0636554a9ad4",
+      "persistence": "stored",
+      "price": {
+        "burn_status": "not_attempted",
+        "program": "Token-2022",
+        "treasury": "GuGoJPgF2wufK5U983oTwW5mXJb3GN9KNyj9S5gyffkH",
+        "zambo_burned": 0
+      },
+      "provenance_class": "OBSERVED VIA GATEWAY",
+      "receipt_schema_version": "0.4",
+      "receipt_type": "pre_execution_rejection",
+      "result_status": "failed",
+      "server": "zambo.dev/mcp",
+      "side_effects": {
+        "declaration_hash": "sha256:dfb4412aa429d3ac637a05668c435bcc90a251363fcdd49f7b85ae4ab55b5bc9",
+        "declared": [
+          "state_write"
+        ],
+        "schema_version": "zambo-side-effects/1"
+      },
+      "status": "error",
+      "timestamp": "2026-11-19T18:47:06.865Z",
+      "tool": "journal_log",
+      "tool_context": {
+        "name": "journal_log",
+        "scope": "public",
+        "version": "4.1.4"
+      },
+      "verification_status": "not_verified",
+      "workflow_index_status": "stored"
+    },
+    "content": [
+      {
+        "text": "Call rejected before execution: This operation key is already bound to different parameters. No journal entry was added; use a new job_id for a different operation.\n\nhttps://zambo.dev/run/d33fc9a7-7f3a-405f-bd98-6dce72983beb\n\nCorrect the request and retry.",
+        "type": "text"
+      },
+      {
+        "mimeType": "text/html",
+        "name": "Zambo execution receipt",
+        "type": "resource_link",
+        "uri": "https://zambo.dev/run/d33fc9a7-7f3a-405f-bd98-6dce72983beb"
+      }
+    ],
+    "isError": true,
+    "resultType": "complete",
+    "structuredContent": {
+      "caller_handle": "zch_z0aGECya1DDINQyOK_9UkA.kbbzkJePZUs9oxDdwOBis5",
+      "caller_handle_instruction": "Persist the initialize caller_handle in private durable agent state scoped to this user or tenant. Reuse it as _caller_handle on every call, including after reconnects and restarts; never share it across unrelated users. Keep _session_id separate and stable only while resuming the same job. This handle can retrieve facts the user chose to save, so keep it private; it is not authentication or payment authorization. If you cannot retain it safely, do not promise cross-session continuity. Keep the handle private; it is not payment authorization.",
+      "error": {
+        "code": "idempotency_conflict",
+        "message": "This operation key is already bound to different parameters. No journal entry was added; use a new job_id for a different operation.",
+        "next_step": "Correct the request and retry.",
+        "next_url": "https://zambo.dev/mcp"
+      },
+      "executed": false,
+      "human_line": "This operation key is already bound to different parameters. No journal entry was added; use a new job_id for a different operation.",
+      "ids": {
+        "receipt_id": "d33fc9a7-7f3a-405f-bd98-6dce72983beb"
+      },
+      "next": "Correct the request and retry.",
+      "next_steps": [
+        "Correct the request and retry."
+      ],
+      "ok": false,
+      "quota_handle": "zch_WoK3EhmJY9vfTX91_4RD-K.KQtBj6XOsxlEu9xlPejFD1",
+      "quota_handle_instruction": "Reuse quota_handle to preserve the network's daily free allowance. caller_handle scopes this client's private memory and continuity only; changing it does not reset the network allowance. Neither handle is payment authorization.",
+      "receipt_standard": "Every call returns an AER-1 receipt (IETF Internet-Draft draft-zambo-aer1-26, current revision) that anyone can verify offline at https://zambo.dev/verify/.",
+      "receipt_url": "https://zambo.dev/run/d33fc9a7-7f3a-405f-bd98-6dce72983beb",
+      "rejection": true,
+      "result": {
+        "error": {
+          "code": "idempotency_conflict",
+          "message": "This operation key is already bound to different parameters. No journal entry was added; use a new job_id for a different operation.",
+          "next_step": "Correct the request and retry.",
+          "next_url": "https://zambo.dev/mcp"
+        },
+        "executed": false,
+        "receipt_url": "https://zambo.dev/run/d33fc9a7-7f3a-405f-bd98-6dce72983beb",
+        "rejection": true
+      },
+      "urls": {
+        "receipt": "https://zambo.dev/run/d33fc9a7-7f3a-405f-bd98-6dce72983beb",
+        "receipt_url": "https://zambo.dev/run/d33fc9a7-7f3a-405f-bd98-6dce72983beb"
+      }
+    }
+  }
+}

@@ -1,0 +1,568 @@
+{
+  "body": {
+    "id": "960ca9961d4f47cf9a0d1f17d1aab5df",
+    "jsonrpc": "2.0",
+    "result": {
+      "_meta": {
+        "dev.zambo/receipt": {
+          "id": "fd8bb771-5336-4ec2-abeb-853b407fdaa7",
+          "output_hash": "sha256:7ac4411fa8e736a96f029fd7187eb41ad4ea219a055d703f111633512536cc14",
+          "run_url": "https://zambo.dev/run/fd8bb771-5336-4ec2-abeb-853b407fdaa7"
+        }
+      },
+      "_receipt": {
+        "anchor": {
+          "envelope": {
+            "anchored_at": "2026-11-18T21:31:37.307Z",
+            "evidence_byte_length": null,
+            "evidence_sha256": null,
+            "evidence_url": null,
+            "output_sha256": "sha256:7ac4411fa8e736a96f029fd7187eb41ad4ea219a055d703f111633512536cc14",
+            "receipt_uuid": "fd8bb771-5336-4ec2-abeb-853b407fdaa7",
+            "schema_version": "zambo-receipt-anchor/1"
+          },
+          "envelope_bytes": "{\"anchored_at\":\"2026-11-18T21:31:37.307Z\",\"evidence_byte_length\":null,\"evidence_sha256\":null,\"evidence_url\":null,\"output_sha256\":\"sha256:7ac4411fa8e736a96f029fd7187eb41ad4ea219a055d703f111633512536cc14\",\"receipt_uuid\":\"fd8bb771-5336-4ec2-abeb-853b407fdaa7\",\"schema_version\":\"zambo-receipt-anchor/1\"}",
+          "event_id": "f6c0f606a0b21a9b3c0f1a9fce7510aa4b4fdd4f3b6acdaa2a032e9c9022bab0",
+          "pubkey": "e13475107d30c918ec664adf2ab1141024a22fb35190f82c9e933704fa49af41",
+          "relays": [
+            "wss://relay.primal.net"
+          ],
+          "schema_version": "zambo-receipt-anchor/1",
+          "status": "pending"
+        },
+        "audit": "https://zambo.dev/run/fd8bb771-5336-4ec2-abeb-853b407fdaa7",
+        "auth_scope": "public",
+        "bonus_calls_remaining": 0,
+        "caller": {
+          "id": "sha256:b407307862926a0f9306d3f74325e023bfa1be9b62fe6fc55da554bd4c4f6640",
+          "type": "session"
+        },
+        "canonical_byte_length": 578,
+        "canonical_bytes": "eyJjYWxsZXIiOnsiaWQiOiJzaGEyNTY6YjQwNzMwNzg2MjkyNmEwZjkzMDZkM2Y3NDMyNWUwMjNiZmExYmU5YjYyZmU2ZmM1NWRhNTU0YmQ0YzRmNjY0MCIsInR5cGUiOiJzZXNzaW9uIn0sImlzc3Vlcl9jbGFpbXMiOnsicHJvdmVuYW5jZV9jbGFzcyI6IkVYRUNVVEVEIEJZIFpBTUJPIn0sIm91dHB1dCI6eyJtZXNzYWdlIjoiUHJpdmF0ZSBkZWxpdmVyeSBjcmVhdGVkLiBVc2UgdGhlIGNsaWVudCBvciBvd25lciBsaW5rIHJldHVybmVkIHRvIHRoZSByZXF1ZXN0aW5nIHNlc3Npb24uIiwidmlzaWJpbGl0eSI6InByaXZhdGUifSwicmVjZWlwdF9zY2hlbWFfdmVyc2lvbiI6IjAuNCIsInNpZGVfZWZmZWN0cyI6eyJkZWNsYXJhdGlvbl9oYXNoIjoic2hhMjU2OjQ1YWFkMzhmM2FhOTgyYjlhYWZlOTJlY2I0MTZlYmU5ODc5MWVkZGJhZjhhYjZkZjBiZDA4NjA1YjdjMWJmZWUiLCJkZWNsYXJlZCI6WyJub25lIl0sInNjaGVtYV92ZXJzaW9uIjoiemFtYm8tc2lkZS1lZmZlY3RzLzEifSwidG9vbCI6eyJuYW1lIjoiY29udGludWl0eV9nZXRfcmVjZW50Iiwic2NvcGUiOiJwdWJsaWMiLCJ2ZXJzaW9uIjoiNC4xLjQifX0=",
+        "evidence_byte_length": null,
+        "evidence_content_type": null,
+        "evidence_sha256": null,
+        "evidence_source": null,
+        "evidence_source_url": null,
+        "evidence_status": "empty",
+        "evidence_url": null,
+        "execution_context": {
+          "environment": "zambo.dev hosted MCP",
+          "quota_identity": {
+            "meter_key": "sha256:3a411e380ad895658935b0ef01f40b6d9f3d4350432359a14f9bda3f39eb9f71",
+            "stable_handle_hash": "sha256:b407307862926a0f9306d3f74325e023bfa1be9b62fe6fc55da554bd4c4f6640"
+          }
+        },
+        "execution_status": "step_completed",
+        "external_evidence": [],
+        "free_limit": 3,
+        "free_remaining": 3,
+        "free_used": 0,
+        "hash_algorithm": "sha256",
+        "id": "fd8bb771-5336-4ec2-abeb-853b407fdaa7",
+        "input_hash": "sha256:5d2abc3693289424998dcc838b5032104084549ab75481c4c19ddd1de3c071a2",
+        "input_hash_layout": "zambo-json-sorted-keys-utf8-v1",
+        "metadata_hash": "sha256:38bfea6ebc72ced8a78b1959ba0b2ab7cce9a8d113739ce2d047b4f1d3bdc974",
+        "metered_bucket": "free_20",
+        "metered_limit": 3,
+        "metered_remaining": 3,
+        "metered_used": 0,
+        "output_hash": "sha256:7ac4411fa8e736a96f029fd7187eb41ad4ea219a055d703f111633512536cc14",
+        "persistence": "stored",
+        "price": {
+          "burn_status": "not_attempted",
+          "program": "Token-2022",
+          "treasury": "GuGoJPgF2wufK5U983oTwW5mXJb3GN9KNyj9S5gyffkH",
+          "zambo_burned": 0
+        },
+        "provenance": {
+          "evidence_captures": [],
+          "evidence_source": null,
+          "evidence_status": "empty",
+          "result_source": null
+        },
+        "provenance_class": "EXECUTED BY ZAMBO",
+        "receipt_schema_version": "0.4",
+        "receipt_type": "meta",
+        "result_source": null,
+        "result_status": "verified",
+        "server": "zambo.dev/mcp",
+        "side_effects": {
+          "declaration_hash": "sha256:45aad38f3aa982b9aafe92ecb416ebe98791eddbaf8ab6df0bd08605b7c1bfee",
+          "declared": [
+            "none"
+          ],
+          "schema_version": "zambo-side-effects/1"
+        },
+        "signal_handle": null,
+        "status": "success",
+        "timestamp": "2026-11-18T21:31:37.307Z",
+        "today_url": "https://zambo.dev/today/k/oH91QZngMDhSrbPF9t9n1g_hejxV4JhEIankcKmmgK0JlT_kuei1P8AFD2NeUKvWT2kF1X18Cs0A3w48tfjYklKY16ZAXZGPmO_FvPAY4pu3JQqd94sF-RvMYDVT",
+        "tool": "continuity_get_recent",
+        "tool_context": {
+          "name": "continuity_get_recent",
+          "scope": "public",
+          "version": "4.1.4"
+        },
+        "verification_status": "not_verified",
+        "workflow": {
+          "id": "faac314a-b1e3-4d6f-be0d-0b1a82e40ba5",
+          "step_index": 1,
+          "url": "https://zambo.dev/workflow/faac314a-b1e3-4d6f-be0d-0b1a82e40ba5"
+        },
+        "workflow_index_status": "stored"
+      },
+      "_session_depth": 1,
+      "_session_id": "scoped:47ea8a62ed0c4a8f5f3c32663451f0144b9caf4d",
+      "_workflow": {
+        "next_action": "The host AI should integrate this result, continue any remaining steps, verify the requested outcome, and then summarize what is complete.",
+        "protocol": "zambo-collaborative-v4",
+        "session_depth": 1,
+        "session_id": "scoped:47ea8a62ed0c4a8f5f3c32663451f0144b9caf4d",
+        "status": "step_completed",
+        "tool": "continuity_get_recent"
+      },
+      "content": [
+        {
+          "text": "status: found\noperation key: lr-op-d99166563b-a1\noriginal outcome / status: logged\noriginal outcome / provenance class: LOGGED BY AGENT\noriginal outcome / entry / job id: lr-op-d99166563b-a1\noriginal outcome / entry / entry id: 98f87534-3380-43f4-97a3-899adf111538\noriginal outcome / entry / sequence: 1\noriginal outcome / entry / provenance class: LOGGED BY AGENT\noriginal outcome / entry / tool name: lost_response_probe\noriginal outcome / entry / redacted inputs hash: sha256:009dc69401a98a8cadc92ecf32baacc0bb7a1d9aa505445f7632f20b86483c4f\noriginal outcome / entry / started at: 2026-11-17T20:57:35.602Z\noriginal outcome / entry / completed at: 2026-11-17T20:57:35.602Z\noriginal outcome / entry / duration ms: 0\noriginal outcome / entry / executor identity: lost-response-harness\noriginal outcome / entry / entry hash: sha256:d07ffbe2db7aba619f7df5b2e37caba5ded489c70872b0bfa3f3a73a1c01fa13\noriginal outcome / entry / deleted: false\noriginal outcome / attests: Zambo attests that this record was received, redacted, timestamped, and chained.\noriginal outcome / does not attest: Zambo did not run or observe the reported action.\noriginal outcome / verify url: https://zambo.dev/api/journal/lr-op-d99166563b-a1/verify\noriginal outcome text: {\"status\":\"logged\",\"provenance_class\":\"LOGGED BY AGENT\",\"entry\":{\"job_id\":\"lr-op-d99166563b-a1\",\"entry_id\":\"98f87534-3380-43f4-97a3-899adf111538\",\"sequence\":1,\"provenance_class\":\"LOGGED BY AGENT\",\"tool_name\":\"lost_response_probe\",\"redacted_inputs_hash\":\"sha256:009dc69401a98a8cadc92ecf32baacc0bb7a1d9aa505445f7632f20b86483c4f\",\"started_at\":\"2026-11-17T20:57:35.602Z\",\"completed_at\":\"2026-11-17T20:57:35.602Z\",\"duration_ms\":0,\"executor_identity\":\"lost-response-harness\",\"external_executor\":null,\"metadata\":{},\"prev_hash\":null,\"entry_hash\":\"sha256:d07ffbe2db7aba619f7df5b2e37caba5ded489c70872b0bfa3f3a73a1c01fa13\",\"deleted\":false},\"attests\":\"Zambo attests that this record was received, redacted, timestamped, and chained.\",\"does_not_attest\":\"Zambo did not run or observe the reported action.\",\"verify_url\":\"https://zambo.dev/api/journal/lr-op-d99166563b-a1/verify\"}\nreceipt id: 2e9ebf1f-5743-48de-a34b-5b3584c4c102\noutput digest: sha256:b57197d5333af492c73260784de351c587545b6837ddab98500386714d931b87\n suppress session\n\nReceipt: https://zambo.dev/run/fd8bb771-5336-4ec2-abeb-853b407fdaa7\ntoday history: https://zambo.dev/today/k/oH91QZngMDhSrbPF9t9n1g_hejxV4JhEIankcKmmgK0JlT_kuei1P8AFD2NeUKvWT2kF1X18Cs0A3w48tfjYklKY16ZAXZGPmO_FvPAY4pu3JQqd94sF-RvMYDVT\nEvery tool is free once a day, plus 3 continue calls. One free wrap-up handover per day, and pickup is always free. The Day Pass makes every tool unlimited for 24 hours for $0.99. [Get Day Pass](https://zambo.dev/day-pass/?chat_checkout=9sBf9QAhZUFBxDh1QFR0K0EK&quota_handle=zch_hcnGe14ZMHIm7lvJy_YnQg.G89iK6nW9vEKuI4NYURTSK#checkout)\ntry a workflow: hand this job to another AI and pick it up there free: https://zambo.dev/workflows/cross-ai-relay-long-job\nall workflows: https://zambo.dev/workflows\nnext visit: ask your AI to call zambo_home using the same caller identity to find your saved work. Save notes you choose to keep or wrap up before leaving; your private chat is not saved automatically.",
+          "type": "text"
+        },
+        {
+          "mimeType": "text/html",
+          "name": "Zambo execution receipt",
+          "type": "resource_link",
+          "uri": "https://zambo.dev/run/fd8bb771-5336-4ec2-abeb-853b407fdaa7"
+        },
+        {
+          "text": "",
+          "type": "text"
+        }
+      ],
+      "continuity_status": "persisted",
+      "isError": false,
+      "resultType": "complete",
+      "structuredContent": {
+        "caller_handle": "zch_KBxc_GCIBsCYsU1ApJmNsg.Ep4zPR__m_4MRqL8LArAC4",
+        "caller_handle_instruction": "Persist the initialize caller_handle in private durable agent state scoped to this user or tenant. Reuse it as _caller_handle on every call, including after reconnects and restarts; never share it across unrelated users. Keep _session_id separate and stable only while resuming the same job. This handle can retrieve facts the user chose to save, so keep it private; it is not authentication or payment authorization. If you cannot retain it safely, do not promise cross-session continuity. Keep the handle private; it is not payment authorization.",
+        "human_line": "status: found",
+        "ids": {
+          "receipt_id": "fd8bb771-5336-4ec2-abeb-853b407fdaa7"
+        },
+        "next_steps": [],
+        "offer": {
+          "agent_payment": {
+            "amount_usd": "0.99",
+            "duration_hours": 24,
+            "method": "POST",
+            "payment_required": {
+              "accepts": [
+                {
+                  "amount": "990000",
+                  "asset": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+                  "extra": {
+                    "domain": {
+                      "chainId": 8453,
+                      "name": "USD Coin",
+                      "verifyingContract": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+                      "version": "2"
+                    },
+                    "message": {
+                      "from": "<payer_address>",
+                      "nonce": "<bytes32_nonce>",
+                      "to": "0xb753be5Eac5B29c711051DfF91279834e9C9b9AC",
+                      "validAfter": "<unix_seconds>",
+                      "validBefore": "<unix_seconds>",
+                      "value": "990000"
+                    },
+                    "name": "USD Coin",
+                    "primaryType": "TransferWithAuthorization",
+                    "types": {
+                      "TransferWithAuthorization": [
+                        {
+                          "name": "from",
+                          "type": "address"
+                        },
+                        {
+                          "name": "to",
+                          "type": "address"
+                        },
+                        {
+                          "name": "value",
+                          "type": "uint256"
+                        },
+                        {
+                          "name": "validAfter",
+                          "type": "uint256"
+                        },
+                        {
+                          "name": "validBefore",
+                          "type": "uint256"
+                        },
+                        {
+                          "name": "nonce",
+                          "type": "bytes32"
+                        }
+                      ]
+                    },
+                    "version": "2"
+                  },
+                  "maxTimeoutSeconds": 900,
+                  "network": "eip155:8453",
+                  "payTo": "0xb753be5Eac5B29c711051DfF91279834e9C9b9AC",
+                  "scheme": "exact"
+                }
+              ],
+              "agent_payment": {
+                "activation": "24-hour access; never activates without a verified transfer",
+                "amount_atomic": "990000",
+                "amount_usdc": "0.99",
+                "asset": "USDC",
+                "autonomous_payment_policy": "Agents may pay the $0.99 USDC Day Pass (x402 on Base, 24 hours) only when the user's existing wallet or spending policy explicitly authorizes this purchase. Otherwise, provide human checkout; never charge a human card.",
+                "endpoint": "https://zambo.dev/mcp",
+                "network": "eip155:8453",
+                "network_name": "Base",
+                "step_1": "Sign accepts[0] in this response and POST PAYMENT-SIGNATURE to https://zambo.dev/api/x402/day-pass.",
+                "step_2": "After settlement succeeds, retry the same call with its original arguments and PAYMENT-SIGNATURE. The response includes the Proof Drop and continuation details.",
+                "tool": "day_pass_activate"
+              },
+              "autonomous_payment_policy": "Agents may pay the $0.99 USDC Day Pass (x402 on Base, 24 hours) only when the user's existing wallet or spending policy explicitly authorizes this purchase. Otherwise, provide human checkout; never charge a human card.",
+              "error": {
+                "code": "payment_required",
+                "message": "Payment required to access this resource",
+                "next_step": "Sign accepts[0] in this response and POST PAYMENT-SIGNATURE to https://zambo.dev/api/x402/day-pass.",
+                "next_url": "https://zambo.dev/api/x402/day-pass"
+              },
+              "extensions": {
+                "bazaar": {
+                  "info": {
+                    "input": {
+                      "body": {
+                        "_session_id": "agent-job-session"
+                      },
+                      "bodyType": "json",
+                      "method": "POST",
+                      "type": "http"
+                    },
+                    "output": {
+                      "example": {
+                        "activated": true,
+                        "receipt_url": "https://zambo.dev/run/example",
+                        "success": true
+                      },
+                      "type": "json"
+                    }
+                  },
+                  "schema": {
+                    "$schema": "https://json-schema.org/draft/2020-12/schema",
+                    "properties": {
+                      "input": {
+                        "properties": {
+                          "body": {
+                            "additionalProperties": false,
+                            "properties": {
+                              "_quota_caller_handle": {
+                                "maxLength": 128,
+                                "type": "string"
+                              },
+                              "_session_id": {
+                                "description": "Optional job session to bind the pass and continuation to.",
+                                "maxLength": 64,
+                                "type": "string"
+                              },
+                              "quota_handle": {
+                                "maxLength": 128,
+                                "type": "string"
+                              },
+                              "ref": {
+                                "maxLength": 128,
+                                "type": "string"
+                              },
+                              "source_ref": {
+                                "maxLength": 128,
+                                "type": "string"
+                              },
+                              "sponsor": {
+                                "type": "boolean"
+                              },
+                              "workflow_id": {
+                                "maxLength": 128,
+                                "type": "string"
+                              }
+                            },
+                            "type": "object"
+                          },
+                          "bodyType": {
+                            "enum": [
+                              "json"
+                            ],
+                            "type": "string"
+                          },
+                          "method": {
+                            "enum": [
+                              "POST"
+                            ],
+                            "type": "string"
+                          },
+                          "type": {
+                            "const": "http",
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "type",
+                          "method",
+                          "bodyType",
+                          "body"
+                        ],
+                        "type": "object"
+                      },
+                      "output": {
+                        "properties": {
+                          "example": {
+                            "properties": {
+                              "activated": {
+                                "type": "boolean"
+                              },
+                              "expires_at": {
+                                "description": "The server-issued ISO-8601 expiry, 24 hours after successful activation.",
+                                "format": "date-time",
+                                "type": "string"
+                              },
+                              "receipt_url": {
+                                "type": [
+                                  "string",
+                                  "null"
+                                ]
+                              },
+                              "success": {
+                                "type": "boolean"
+                              }
+                            },
+                            "type": "object"
+                          },
+                          "type": {
+                            "const": "json",
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "type",
+                          "example"
+                        ],
+                        "type": "object"
+                      }
+                    },
+                    "required": [
+                      "input",
+                      "output"
+                    ],
+                    "type": "object"
+                  }
+                }
+              },
+              "human_line": "[Get Day Pass \u00b7 $0.99](https://zambo.dev/day-pass/?source=mcp-quota&chat_checkout=9sBf9QAhZUFBxDh1QFR0K0EK&quota_handle=zch_hcnGe14ZMHIm7lvJy_YnQg.G89iK6nW9vEKuI4NYURTSK#checkout)",
+              "human_url": "https://zambo.dev/day-pass/?source=mcp-quota&chat_checkout=9sBf9QAhZUFBxDh1QFR0K0EK&quota_handle=zch_hcnGe14ZMHIm7lvJy_YnQg.G89iK6nW9vEKuI4NYURTSK#checkout",
+              "next": "Sign accepts[0] in this response and POST PAYMENT-SIGNATURE to https://zambo.dev/api/x402/day-pass.",
+              "next_url": "https://zambo.dev/api/x402/day-pass",
+              "no_wallet": "For human checkout, open human_url.",
+              "on_success_returns": [
+                "receipt_url",
+                "run_id",
+                "uuid",
+                "access_key",
+                "expires_at",
+                "x402_spend_receipt",
+                "settlement_tx_hash",
+                "level",
+                "proof_drop_url",
+                "paid_replay or retry",
+                "continue",
+                "show_to_human",
+                "human_line"
+              ],
+              "payment_proof": {
+                "accepted": {
+                  "amount": "990000",
+                  "asset": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+                  "extra": {
+                    "domain": {
+                      "chainId": 8453,
+                      "name": "USD Coin",
+                      "verifyingContract": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+                      "version": "2"
+                    },
+                    "message": {
+                      "from": "<payer_address>",
+                      "nonce": "<bytes32_nonce>",
+                      "to": "0xb753be5Eac5B29c711051DfF91279834e9C9b9AC",
+                      "validAfter": "<unix_seconds>",
+                      "validBefore": "<unix_seconds>",
+                      "value": "990000"
+                    },
+                    "name": "USD Coin",
+                    "primaryType": "TransferWithAuthorization",
+                    "types": {
+                      "TransferWithAuthorization": [
+                        {
+                          "name": "from",
+                          "type": "address"
+                        },
+                        {
+                          "name": "to",
+                          "type": "address"
+                        },
+                        {
+                          "name": "value",
+                          "type": "uint256"
+                        },
+                        {
+                          "name": "validAfter",
+                          "type": "uint256"
+                        },
+                        {
+                          "name": "validBefore",
+                          "type": "uint256"
+                        },
+                        {
+                          "name": "nonce",
+                          "type": "bytes32"
+                        }
+                      ]
+                    },
+                    "version": "2"
+                  },
+                  "maxTimeoutSeconds": 900,
+                  "network": "eip155:8453",
+                  "payTo": "0xb753be5Eac5B29c711051DfF91279834e9C9b9AC",
+                  "scheme": "exact"
+                },
+                "destination": "https://zambo.dev/api/x402/day-pass",
+                "encoding": "base64(JSON {x402Version:2,accepted:{scheme,network,asset,amount,payTo,maxTimeoutSeconds,extra},payload:{signature,authorization}})",
+                "header": "PAYMENT-SIGNATURE (X-Payment also accepted)",
+                "required": true,
+                "retry_policy": "A refused invalid signature is retryable with a newly signed authorization. Never reuse a consumed nonce or a prior signature. Request a fresh challenge if expired."
+              },
+              "resource": {
+                "description": "One-time $0.99 USDC on Base activates 24-hour Zambo MCP access after payment verification; the response includes expiry and receipt details.",
+                "mimeType": "application/json",
+                "serviceName": "Zambo",
+                "tags": [
+                  "ai-tools",
+                  "mcp",
+                  "agent-workflows",
+                  "continuity",
+                  "receipts"
+                ],
+                "url": "https://zambo.dev/api/x402/day-pass"
+              },
+              "step_1": "Sign accepts[0] in this response and POST PAYMENT-SIGNATURE to https://zambo.dev/api/x402/day-pass.",
+              "unlocks": "24-hour access to the Zambo MCP connection, subject to product/provider allowances listed at https://zambo.dev/pricing",
+              "x402Version": 2
+            },
+            "protocol": "x402",
+            "resume": {
+              "retry_same_call": true,
+              "session_id": "lr-op-d99166563b-a1",
+              "tool_name": "day_pass_status"
+            },
+            "url": "https://zambo.dev/api/x402/day-pass"
+          },
+          "button_label": "Get Day Pass \u00b7 $0.99",
+          "checkout_url": "https://zambo.dev/day-pass/?source=continuity&job=lr-op-d99166563b-a1&quota_handle=zch_hcnGe14ZMHIm7lvJy_YnQg.G89iK6nW9vEKuI4NYURTSK&chat_checkout=9sBf9QAhZUFBxDh1QFR0K0EK#checkout",
+          "text": "Continue free. Keep moving work between AIs: Get Level 2. [Get Day Pass \u00b7 $0.99](https://zambo.dev/day-pass/?source=continuity&job=lr-op-d99166563b-a1&quota_handle=zch_hcnGe14ZMHIm7lvJy_YnQg.G89iK6nW9vEKuI4NYURTSK&chat_checkout=9sBf9QAhZUFBxDh1QFR0K0EK#checkout)",
+          "type": "level_2"
+        },
+        "ok": true,
+        "operation_key": "lr-op-d99166563b-a1",
+        "original_outcome": {
+          "attests": "Zambo attests that this record was received, redacted, timestamped, and chained.",
+          "does_not_attest": "Zambo did not run or observe the reported action.",
+          "entry": {
+            "completed_at": "2026-11-17T20:57:35.602Z",
+            "deleted": false,
+            "duration_ms": 0,
+            "entry_hash": "sha256:d07ffbe2db7aba619f7df5b2e37caba5ded489c70872b0bfa3f3a73a1c01fa13",
+            "entry_id": "98f87534-3380-43f4-97a3-899adf111538",
+            "executor_identity": "lost-response-harness",
+            "external_executor": null,
+            "job_id": "lr-op-d99166563b-a1",
+            "metadata": {},
+            "prev_hash": null,
+            "provenance_class": "LOGGED BY AGENT",
+            "redacted_inputs_hash": "sha256:009dc69401a98a8cadc92ecf32baacc0bb7a1d9aa505445f7632f20b86483c4f",
+            "sequence": 1,
+            "started_at": "2026-11-17T20:57:35.602Z",
+            "tool_name": "lost_response_probe"
+          },
+          "provenance_class": "LOGGED BY AGENT",
+          "status": "logged",
+          "verify_url": "https://zambo.dev/api/journal/lr-op-d99166563b-a1/verify"
+        },
+        "original_outcome_text": "{\"status\":\"logged\",\"provenance_class\":\"LOGGED BY AGENT\",\"entry\":{\"job_id\":\"lr-op-d99166563b-a1\",\"entry_id\":\"98f87534-3380-43f4-97a3-899adf111538\",\"sequence\":1,\"provenance_class\":\"LOGGED BY AGENT\",\"tool_name\":\"lost_response_probe\",\"redacted_inputs_hash\":\"sha256:009dc69401a98a8cadc92ecf32baacc0bb7a1d9aa505445f7632f20b86483c4f\",\"started_at\":\"2026-11-17T20:57:35.602Z\",\"completed_at\":\"2026-11-17T20:57:35.602Z\",\"duration_ms\":0,\"executor_identity\":\"lost-response-harness\",\"external_executor\":null,\"metadata\":{},\"prev_hash\":null,\"entry_hash\":\"sha256:d07ffbe2db7aba619f7df5b2e37caba5ded489c70872b0bfa3f3a73a1c01fa13\",\"deleted\":false},\"attests\":\"Zambo attests that this record was received, redacted, timestamped, and chained.\",\"does_not_attest\":\"Zambo did not run or observe the reported action.\",\"verify_url\":\"https://zambo.dev/api/journal/lr-op-d99166563b-a1/verify\"}",
+        "output_digest": "sha256:b57197d5333af492c73260784de351c587545b6837ddab98500386714d931b87",
+        "quota_handle": "zch_hcnGe14ZMHIm7lvJy_YnQg.G89iK6nW9vEKuI4NYURTSK",
+        "quota_handle_instruction": "Reuse the issued caller_handle and quota_handle together, or keep reusing quota_handle if caller_handle is unavailable. Their paired values preserve one daily bucket; a different explicit caller_handle selects a separate bucket. Neither is payment authorization or private-memory ownership.",
+        "receipt_id": "2e9ebf1f-5743-48de-a34b-5b3584c4c102",
+        "receipt_standard": "Every call returns an AER-1 receipt (IETF Internet-Draft draft-zambo-aer1-26, current revision) that anyone can verify offline at https://zambo.dev/verify/.",
+        "receipt_url": "https://zambo.dev/run/fd8bb771-5336-4ec2-abeb-853b407fdaa7",
+        "result": {
+          "operation_key": "lr-op-d99166563b-a1",
+          "original_outcome": {
+            "attests": "Zambo attests that this record was received, redacted, timestamped, and chained.",
+            "does_not_attest": "Zambo did not run or observe the reported action.",
+            "entry": {
+              "completed_at": "2026-11-17T20:57:35.602Z",
+              "deleted": false,
+              "duration_ms": 0,
+              "entry_hash": "sha256:d07ffbe2db7aba619f7df5b2e37caba5ded489c70872b0bfa3f3a73a1c01fa13",
+              "entry_id": "98f87534-3380-43f4-97a3-899adf111538",
+              "executor_identity": "lost-response-harness",
+              "external_executor": null,
+              "job_id": "lr-op-d99166563b-a1",
+              "metadata": {},
+              "prev_hash": null,
+              "provenance_class": "LOGGED BY AGENT",
+              "redacted_inputs_hash": "sha256:009dc69401a98a8cadc92ecf32baacc0bb7a1d9aa505445f7632f20b86483c4f",
+              "sequence": 1,
+              "started_at": "2026-11-17T20:57:35.602Z",
+              "tool_name": "lost_response_probe"
+            },
+            "provenance_class": "LOGGED BY AGENT",
+            "status": "logged",
+            "verify_url": "https://zambo.dev/api/journal/lr-op-d99166563b-a1/verify"
+          },
+          "original_outcome_text": "{\"status\":\"logged\",\"provenance_class\":\"LOGGED BY AGENT\",\"entry\":{\"job_id\":\"lr-op-d99166563b-a1\",\"entry_id\":\"98f87534-3380-43f4-97a3-899adf111538\",\"sequence\":1,\"provenance_class\":\"LOGGED BY AGENT\",\"tool_name\":\"lost_response_probe\",\"redacted_inputs_hash\":\"sha256:009dc69401a98a8cadc92ecf32baacc0bb7a1d9aa505445f7632f20b86483c4f\",\"started_at\":\"2026-11-17T20:57:35.602Z\",\"completed_at\":\"2026-11-17T20:57:35.602Z\",\"duration_ms\":0,\"executor_identity\":\"lost-response-harness\",\"external_executor\":null,\"metadata\":{},\"prev_hash\":null,\"entry_hash\":\"sha256:d07ffbe2db7aba619f7df5b2e37caba5ded489c70872b0bfa3f3a73a1c01fa13\",\"deleted\":false},\"attests\":\"Zambo attests that this record was received, redacted, timestamped, and chained.\",\"does_not_attest\":\"Zambo did not run or observe the reported action.\",\"verify_url\":\"https://zambo.dev/api/journal/lr-op-d99166563b-a1/verify\"}",
+          "output_digest": "sha256:b57197d5333af492c73260784de351c587545b6837ddab98500386714d931b87",
+          "receipt_id": "2e9ebf1f-5743-48de-a34b-5b3584c4c102",
+          "receipt_url": "https://zambo.dev/run/fd8bb771-5336-4ec2-abeb-853b407fdaa7",
+          "status": "found",
+          "today_url": "https://zambo.dev/today/k/oH91QZngMDhSrbPF9t9n1g_hejxV4JhEIankcKmmgK0JlT_kuei1P8AFD2NeUKvWT2kF1X18Cs0A3w48tfjYklKY16ZAXZGPmO_FvPAY4pu3JQqd94sF-RvMYDVT"
+        },
+        "status": "found",
+        "today_url": "https://zambo.dev/today/k/oH91QZngMDhSrbPF9t9n1g_hejxV4JhEIankcKmmgK0JlT_kuei1P8AFD2NeUKvWT2kF1X18Cs0A3w48tfjYklKY16ZAXZGPmO_FvPAY4pu3JQqd94sF-RvMYDVT",
+        "urls": {
+          "receipt": "https://zambo.dev/run/fd8bb771-5336-4ec2-abeb-853b407fdaa7",
+          "receipt_url": "https://zambo.dev/run/fd8bb771-5336-4ec2-abeb-853b407fdaa7",
+          "today_url": "https://zambo.dev/today/k/oH91QZngMDhSrbPF9t9n1g_hejxV4JhEIankcKmmgK0JlT_kuei1P8AFD2NeUKvWT2kF1X18Cs0A3w48tfjYklKY16ZAXZGPmO_FvPAY4pu3JQqd94sF-RvMYDVT"
+        }
+      },
+      "today_url": "https://zambo.dev/today/k/oH91QZngMDhSrbPF9t9n1g_hejxV4JhEIankcKmmgK0JlT_kuei1P8AFD2NeUKvWT2kF1X18Cs0A3w48tfjYklKY16ZAXZGPmO_FvPAY4pu3JQqd94sF-RvMYDVT"
+    }
+  },
+  "dropped": false,
+  "receipt_ids": [
+    "fd8bb771-5336-4ec2-abeb-853b407fdaa7",
+    "2e9ebf1f-5743-48de-a34b-5b3584c4c102",
+    "example"
+  ],
+  "response_class": "success",
+  "transport": {
+    "content_length_header": "21970",
+    "elapsed_ms": 1483,
+    "http_status": 200,
+    "jsonrpc_id": "960ca9961d4f47cf9a0d1f17d1aab5df",
+    "received_at": "2026-11-18T21:31:37.073320Z",
+    "response_bytes": 21970,
+    "sent_at": "2026-11-18T21:31:35.590320Z"
+  }
+}

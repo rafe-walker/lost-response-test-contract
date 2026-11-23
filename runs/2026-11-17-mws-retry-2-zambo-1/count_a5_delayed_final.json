@@ -1,0 +1,89 @@
+{
+  "at": "2026-11-18T21:31:44.565344Z",
+  "attributed_children": [
+    {
+      "counted_as_target_execution": true,
+      "output_hash": "sha256:b57197d5333af492c73260784de351c587545b6837ddab98500386714d931b87",
+      "receipt_id": "2e9ebf1f-5743-48de-a34b-5b3584c4c102",
+      "resolves_in_public_record": true,
+      "step_status": "success",
+      "tools": [
+        "journal_log"
+      ]
+    },
+    {
+      "counted_as_target_execution": false,
+      "output_hash": "sha256:337df0eedb6b2b1e7f9fcf7289bb6e4c2488babb2ab661b79f415bc8a14202cb",
+      "receipt_id": "d735c5e0-510d-4032-a7e0-45bd22df3de3",
+      "resolves_in_public_record": true,
+      "step_status": "success",
+      "tools": [
+        "workflow_close"
+      ]
+    },
+    {
+      "counted_as_target_execution": false,
+      "output_hash": "sha256:fd3b056cdaa888d459c50482834a8fb01c04454e1beae70a2621bb0bd883fcc5",
+      "receipt_id": "1ebeb9ed-43f2-413e-a786-188d6aab37fb",
+      "resolves_in_public_record": true,
+      "step_status": "success",
+      "tools": [
+        "workflow_close"
+      ]
+    },
+    {
+      "counted_as_target_execution": false,
+      "output_hash": "sha256:3959b6e33c0b93290957d79e5ff8c19aa5febe5866826123b2d0382c77cbd007",
+      "receipt_id": "cb58f924-b992-4825-8856-aa63f563bbc9",
+      "resolves_in_public_record": true,
+      "step_status": "success",
+      "tools": [
+        "workflow_close"
+      ]
+    },
+    {
+      "counted_as_target_execution": false,
+      "output_hash": "sha256:6fdde81959528ed86ea82125fa3415a76ac4a5b2e44b25cf51f8285a46d13966",
+      "receipt_id": "6f10bb98-a9df-4ab4-b56e-9af11c3bb1ae",
+      "resolves_in_public_record": true,
+      "step_status": "rejected_before_execution",
+      "tools": [
+        "journal_log"
+      ]
+    }
+  ],
+  "execution_record_ids": [
+    "2e9ebf1f-5743-48de-a34b-5b3584c4c102"
+  ],
+  "external_effect_count": 1,
+  "label": "a5_delayed_after_protection",
+  "method": "workflow_close snapshot children, each attributed through its public /api/v2/receipt/<id>/verify record",
+  "session_id": "lr-d99166563b-a1",
+  "snapshot_children": [
+    {
+      "output_hash_in_snapshot": "b57197d5333af492c73260784de351c587545b6837ddab98500386714d931b87",
+      "receipt_id": "2e9ebf1f-5743-48de-a34b-5b3584c4c102"
+    },
+    {
+      "output_hash_in_snapshot": "337df0eedb6b2b1e7f9fcf7289bb6e4c2488babb2ab661b79f415bc8a14202cb",
+      "receipt_id": "d735c5e0-510d-4032-a7e0-45bd22df3de3"
+    },
+    {
+      "output_hash_in_snapshot": "fd3b056cdaa888d459c50482834a8fb01c04454e1beae70a2621bb0bd883fcc5",
+      "receipt_id": "1ebeb9ed-43f2-413e-a786-188d6aab37fb"
+    },
+    {
+      "output_hash_in_snapshot": "3959b6e33c0b93290957d79e5ff8c19aa5febe5866826123b2d0382c77cbd007",
+      "receipt_id": "cb58f924-b992-4825-8856-aa63f563bbc9"
+    },
+    {
+      "output_hash_in_snapshot": "6fdde81959528ed86ea82125fa3415a76ac4a5b2e44b25cf51f8285a46d13966",
+      "receipt_id": "6f10bb98-a9df-4ab4-b56e-9af11c3bb1ae"
+    }
+  ],
+  "snapshot_count_field": 5,
+  "snapshot_response_class": "success",
+  "target_tool_execution_receipt_ids": [
+    "2e9ebf1f-5743-48de-a34b-5b3584c4c102"
+  ]
+}

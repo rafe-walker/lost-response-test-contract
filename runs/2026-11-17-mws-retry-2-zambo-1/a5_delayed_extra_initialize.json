@@ -1,0 +1,55 @@
+{
+  "body": {
+    "id": "29a22ef3faef40758e6cf61a3e150eb2",
+    "jsonrpc": "2.0",
+    "result": {
+      "capabilities": {
+        "extensions": {
+          "io.modelcontextprotocol/tasks": {}
+        },
+        "prompts": {},
+        "resources": {},
+        "session_context": true,
+        "tool_contracts": true,
+        "tools": {}
+      },
+      "instructions": "Start a new job with capability_search before choosing a specialist tool. Use handover_list with the owning _session_id to find saved deliveries, and handover_accept to pick one up; pickup is free. Persist the initialize caller_handle in private durable agent state scoped to this user or tenant. Reuse it as _caller_handle on every call, including after reconnects and restarts; never share it across unrelated users. Keep _session_id separate and stable only while resuming the same job. This handle can retrieve facts the user chose to save, so keep it private; it is not authentication or payment authorization. If you cannot retain it safely, do not promise cross-session continuity. Do not show the handle in ordinary replies. For saved facts, use memory_remember only with permission, then memory_recall with the same caller handle or the private memory code returned by the save. Every call returns an AER-1 receipt (IETF Internet-Draft draft-zambo-aer1-26, current revision) that anyone can verify offline at https://zambo.dev/verify/. When asked 'do this with proof', 'show me proof', or 'hand this to my client': 1. Connect https://zambo.dev/mcp, no key. 2. Reuse the same _session_id only when continuing that same job across AIs. 3. Show each full receipt URL and explain that it checks saved bytes, not correctness. 4. Never invent activity, counts, payment, or completion.",
+      "meta": {
+        "caller_handle": "zch_KBxc_GCIBsCYsU1ApJmNsg.Ep4zPR__m_4MRqL8LArAC4",
+        "caller_handle_instruction": "Persist the initialize caller_handle in private durable agent state scoped to this user or tenant. Reuse it as _caller_handle on every call, including after reconnects and restarts; never share it across unrelated users. Keep _session_id separate and stable only while resuming the same job. This handle can retrieve facts the user chose to save, so keep it private; it is not authentication or payment authorization. If you cannot retain it safely, do not promise cross-session continuity. The same caller handle is returned in each tool result's structuredContent.caller_handle. Keep it private; it is not payment authorization.",
+        "default_surface": "slim",
+        "full_surface": "?full=true or X-Zambo-Surface: full",
+        "namespaces": [
+          "strategy",
+          "code",
+          "solana",
+          "agent",
+          "core"
+        ],
+        "quota_handle": "zch_hcnGe14ZMHIm7lvJy_YnQg.G89iK6nW9vEKuI4NYURTSK",
+        "quota_handle_instruction": "Reuse the issued caller_handle and quota_handle together, or keep reusing quota_handle if caller_handle is unavailable. Their paired values preserve one daily bucket; a different explicit caller_handle selects a separate bucket. Neither is payment authorization or private-memory ownership.",
+        "tool_contracts": true,
+        "tools_count": 153,
+        "total_tools": 153,
+        "visible_tools": 37
+      },
+      "protocolVersion": "2024-11-05",
+      "resultType": "complete",
+      "serverInfo": {
+        "description": "Give your AI hands, memory, and proof. One URL, no key: https://zambo.dev/mcp. Hand finished work to a client with one link and receipts they can inspect.",
+        "icon": "https://zambo.dev/zambo-mark.svg",
+        "name": "Zambo Stack",
+        "version": "4.1.4"
+      }
+    }
+  },
+  "transport": {
+    "content_length_header": "3283",
+    "elapsed_ms": 1971,
+    "http_status": 200,
+    "jsonrpc_id": "29a22ef3faef40758e6cf61a3e150eb2",
+    "received_at": "2026-11-18T21:31:33.783004Z",
+    "response_bytes": 3283,
+    "sent_at": "2026-11-18T21:31:31.812450Z"
+  }
+}

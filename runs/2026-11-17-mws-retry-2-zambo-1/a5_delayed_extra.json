@@ -1,0 +1,67 @@
+{
+  "K": "lr-op-d99166563b-a1",
+  "assertion": "A5",
+  "committed_digest": "sha256:b57197d5333af492c73260784de351c587545b6837ddab98500386714d931b87",
+  "extra_legs_run_at_note": "timestamps inside raw files",
+  "initialize": {
+    "caller_handle_issued": true,
+    "http_status": 200
+  },
+  "k_only_recovery": {
+    "attempts": [
+      {
+        "http_status": 200,
+        "page_http_status": 200,
+        "page_title_not_found": true,
+        "path": "GET /api/v2/receipt/<K>/verify and GET /run/<K>",
+        "response_class": "found"
+      },
+      {
+        "path": "tools/call continuity_get_recent with K as the only identifier",
+        "receipt_ids_returned": [
+          "fd8bb771-5336-4ec2-abeb-853b407fdaa7",
+          "2e9ebf1f-5743-48de-a34b-5b3584c4c102",
+          "example"
+        ],
+        "response_class": "success"
+      }
+    ],
+    "continuity_has_committed_digest": true,
+    "continuity_has_original_receipt_id": true,
+    "continuity_response_class": "success",
+    "direct_lookup_digests": {
+      "input_hash": "sha256:5dd57fc7f38955c23fa83ae2652308adb944f19519fbf8c2f39b53208243cb4e",
+      "output_hash": "sha256:b57197d5333af492c73260784de351c587545b6837ddab98500386714d931b87"
+    },
+    "direct_lookup_http_status": 200,
+    "observed": "pass",
+    "recovered_digest_equal_to_committed": true,
+    "score_basis": "pass only if a K-only attempt returns the committed outcome with digest equal to committed digest"
+  },
+  "protection": {
+    "count_before": 1,
+    "count_final": 1,
+    "execution_receipt_ids_before": [
+      "2e9ebf1f-5743-48de-a34b-5b3584c4c102"
+    ],
+    "execution_receipt_ids_final": [
+      "2e9ebf1f-5743-48de-a34b-5b3584c4c102"
+    ],
+    "identical_retry": {
+      "receipt_ids": [
+        "2e9ebf1f-5743-48de-a34b-5b3584c4c102"
+      ],
+      "response_class": "success"
+    },
+    "mismatched_retry": {
+      "altered_value": "lost_response_probe_altered",
+      "mismatched_field": "action",
+      "receipt_ids": [
+        "6f10bb98-a9df-4ab4-b56e-9af11c3bb1ae"
+      ],
+      "response_class": "tool_error:idempotency_conflict"
+    },
+    "protected": true
+  },
+  "session_id": "lr-d99166563b-a1"
+}

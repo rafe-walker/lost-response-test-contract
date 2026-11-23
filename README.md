@@ -40,6 +40,15 @@ Draft, under joint review. The assertion set in CONTRACT.md is the
 starting text, open for joint revision before any run counts. Results go
 in RESULTS.md.
 
+Check the evidence shape yourself: every attempt the Zambo adapter runs
+leaves a public, recomputable receipt. One worked-example job from
+November 19, 2026: the [BTC live_price receipt](https://zambo.dev/run/e53423b0-1de0-44da-b862-19e0eed7fb68)
+[![receipt check](https://zambo.dev/api/receipt/e53423b0-1de0-44da-b862-19e0eed7fb68/badge.svg?ref=badge)](https://zambo.dev/run/e53423b0-1de0-44da-b862-19e0eed7fb68),
+and the [handover](https://zambo.dev/handover/97c9ef52-d3bd-44b3-bfeb-7f5886572f7f)
+binding its five steps (three live prices, one honestly recorded
+failure, one zero-result search). Any receipt can be rechecked at
+https://zambo.dev/verify/.
+
 ## Run the harness
 
 The runnable fixture harness lives in fixtures/harness/. It runs

@@ -1,0 +1,208 @@
+{
+  "body": {
+    "api_version": 2,
+    "checks": {
+      "canonical_payload_matches": {
+        "detail": "The stored output and known call context reconstruct the exact canonical bytes.",
+        "label": "Canonical payload reconstruction",
+        "passed": true,
+        "status": "pass"
+      },
+      "chain": {
+        "detail": "This endpoint does not verify an append-only receipt chain.",
+        "status": "not_checked"
+      },
+      "commitment_matches": {
+        "computed_hash": "sha256:bde6e132ba804bde34108e54152370d48aa79762e8ab50b3bf2c0636554a9ad4",
+        "detail": "SHA-256 of the exact decoded canonical bytes matches output_hash.",
+        "expected_hash": "sha256:bde6e132ba804bde34108e54152370d48aa79762e8ab50b3bf2c0636554a9ad4",
+        "passed": true,
+        "status": "pass"
+      },
+      "issuer_authentication": {
+        "detail": "A zambo.dev receipt URL does not authenticate the issuer; no pinned signature or trusted issuer key was checked.",
+        "label": "Issuer authentication",
+        "passed": false,
+        "status": "not_checked"
+      },
+      "metadata_binding": {
+        "detail": "metadata_hash matches the canonical metadata block.",
+        "label": "AER-1 metadata hash",
+        "passed": true,
+        "status": "pass"
+      },
+      "provenance_binding": {
+        "detail": "The metadata claim is consistent with the verified receipt bytes; issuer is not authenticated.",
+        "label": "Provenance claim binding",
+        "passed": true,
+        "status": "pass"
+      },
+      "schema": {
+        "detail": "Schema conformance is left to the client using the linked hosted-profile schema.",
+        "status": "not_checked"
+      },
+      "signature": {
+        "detail": "No Ed25519 signature or pinned signing key is supplied.",
+        "status": "not_checked"
+      }
+    },
+    "evidence_status": "empty",
+    "id": "d33fc9a7-7f3a-405f-bd98-6dce72983beb",
+    "receipt": {
+      "anchor": {
+        "envelope": {
+          "anchored_at": "2026-11-19T18:47:06.865Z",
+          "evidence_byte_length": null,
+          "evidence_sha256": null,
+          "evidence_url": null,
+          "output_sha256": "sha256:bde6e132ba804bde34108e54152370d48aa79762e8ab50b3bf2c0636554a9ad4",
+          "receipt_uuid": "d33fc9a7-7f3a-405f-bd98-6dce72983beb",
+          "schema_version": "zambo-receipt-anchor/1"
+        },
+        "envelope_bytes": "{\"anchored_at\":\"2026-11-19T18:47:06.865Z\",\"evidence_byte_length\":null,\"evidence_sha256\":null,\"evidence_url\":null,\"output_sha256\":\"sha256:bde6e132ba804bde34108e54152370d48aa79762e8ab50b3bf2c0636554a9ad4\",\"receipt_uuid\":\"d33fc9a7-7f3a-405f-bd98-6dce72983beb\",\"schema_version\":\"zambo-receipt-anchor/1\"}",
+        "event_id": "0b725cf59a933289ce1e6252519c40294c5dcbc293ff83edf8e96a26391cd6e5",
+        "pubkey": "e13475107d30c918ec664adf2ab1141024a22fb35190f82c9e933704fa49af41",
+        "published_at": "2026-11-19T18:47:07.394Z",
+        "published_at_semantics": "Relay confirmation time (accepted acknowledgement or exact-event read-back); not the signed event's created_at.",
+        "relays": [
+          "wss://relay.primal.net"
+        ],
+        "schema_version": "zambo-receipt-anchor/1",
+        "status": "published"
+      },
+      "api_version": 1,
+      "caller": {
+        "id": "sha256:7fe4ce38fbc3187b8a27251ebcb3ddd6e81e41dfcbbae946ad69e80426995341",
+        "type": "session"
+      },
+      "canonical_byte_length": 1045,
+      "canonical_bytes": "eyJjYWxsZXIiOnsiaWQiOiJzaGEyNTY6N2ZlNGNlMzhmYmMzMTg3YjhhMjcyNTFlYmNiM2RkZDZlODFlNDFkZmNiYmFlOTQ2YWQ2OWU4MDQyNjk5NTM0MSIsInR5cGUiOiJzZXNzaW9uIn0sImlzc3Vlcl9jbGFpbXMiOnsicHJvdmVuYW5jZV9jbGFzcyI6Ik9CU0VSVkVEIFZJQSBHQVRFV0FZIn0sIm91dHB1dCI6eyJhcmd1bWVudHNfcmVjZWl2ZWQiOnsiYWN0aW9uIjoibG9zdF9yZXNwb25zZV9wcm9iZV9hbHRlcmVkIiwiZXhlY3V0b3JfaWRlbnRpdHkiOiJsb3N0LXJlc3BvbnNlLWhhcm5lc3MiLCJpbnB1dHMiOnsib3BlcmF0aW9uIjoiW3ByaXZhdGVdIn19LCJlcnJvciI6eyJjb2RlIjoiaWRlbXBvdGVuY3lfY29uZmxpY3QiLCJtZXNzYWdlIjoiVGhpcyBvcGVyYXRpb24ga2V5IGlzIGFscmVhZHkgYm91bmQgdG8gZGlmZmVyZW50IHBhcmFtZXRlcnMuIE5vIGpvdXJuYWwgZW50cnkgd2FzIGFkZGVkOyB1c2UgYSBuZXcgam9iX2lkIGZvciBhIGRpZmZlcmVudCBvcGVyYXRpb24uIn0sImV4ZWN1dGVkIjpmYWxzZSwiaW5wdXRfaGFzaCI6InNoYTI1NjpiMjM0ZGYyOTU2MDgyZGMxNTQ1MjAzM2IwMzc4MDQwODFjZjcyMzc3ZjNmYjE4ZTBhNTM4M2QzZjkzOTVmY2Y2IiwiaW5wdXRfaGFzaF9sYXlvdXQiOiJ6YW1iby1qc29uLXNvcnRlZC1rZXlzLXV0ZjgtdjEiLCJvdXRjb21lIjoicmVqZWN0ZWRfYmVmb3JlX2V4ZWN1dGlvbiIsInJlY2VpcHRfdHlwZSI6InByZV9leGVjdXRpb25fcmVqZWN0aW9uIiwicmVxdWVzdGVkX3Rvb2wiOiJqb3VybmFsX2xvZyJ9LCJyZWNlaXB0X3NjaGVtYV92ZXJzaW9uIjoiMC40Iiwic2lkZV9lZmZlY3RzIjp7ImRlY2xhcmF0aW9uX2hhc2giOiJzaGEyNTY6ZGZiNDQxMmFhNDI5ZDNhYzYzN2EwNTY2OGM0MzViY2M5MGEyNTEzNjNmY2RkNDlmN2I4NWFlNGFiNTViNWJjOSIsImRlY2xhcmVkIjpbInN0YXRlX3dyaXRlIl0sInNjaGVtYV92ZXJzaW9uIjoiemFtYm8tc2lkZS1lZmZlY3RzLzEifSwidG9vbCI6eyJuYW1lIjoiam91cm5hbF9sb2ciLCJzY29wZSI6InB1YmxpYyIsInZlcnNpb24iOiI0LjEuNCJ9fQ==",
+      "canonical_bytes_withheld_for_privacy": false,
+      "checks": {
+        "canonical_payload_matches": {
+          "detail": "The stored output and known call context reconstruct the exact canonical bytes.",
+          "label": "Canonical payload reconstruction",
+          "passed": true,
+          "status": "pass"
+        },
+        "chain": {
+          "detail": "No append-only receipt-chain proof was checked.",
+          "label": "Receipt chain (not checked)",
+          "passed": false,
+          "status": "not_checked"
+        },
+        "chain_valid": {
+          "detail": "This endpoint does not verify an append-only chain.",
+          "label": "Receipt chain (not checked)",
+          "passed": false,
+          "status": "not_checked"
+        },
+        "commitment_matches": {
+          "detail": "The exact decoded canonical bytes match the stored SHA-256 output hash.",
+          "label": "SHA-256 commitment",
+          "passed": true,
+          "status": "pass"
+        },
+        "immutable_log_timestamp": {
+          "detail": "The receipt store reports 2026-11-19T18:47:06.865Z; immutability is not checked here.",
+          "label": "Stored timestamp",
+          "passed": true,
+          "timestamp": "2026-11-19T18:47:06.865Z"
+        },
+        "issued_by_zambo_dev": {
+          "detail": "A zambo.dev receipt URL does not authenticate the issuer; no pinned signature or trusted issuer key was checked.",
+          "label": "Issuer authentication",
+          "passed": false,
+          "status": "not_checked"
+        },
+        "metadata_binding": {
+          "detail": "metadata_hash matches the canonical metadata block.",
+          "label": "AER-1 metadata hash",
+          "passed": true,
+          "status": "pass"
+        },
+        "provenance_binding": {
+          "detail": "The metadata claim is consistent with the verified receipt bytes; issuer is not authenticated.",
+          "label": "Provenance claim binding",
+          "passed": true,
+          "status": "pass"
+        },
+        "receipt_schema_version": "0.4",
+        "signature": {
+          "detail": "No Ed25519 signature or pinned signing key was checked.",
+          "label": "Ed25519 signature (not checked)",
+          "passed": false,
+          "status": "not_checked"
+        },
+        "signature_valid": {
+          "detail": "Compatibility field only. No Ed25519 signature was checked; use API v2 checks.commitment_matches for the SHA-256 commitment.",
+          "label": "Ed25519 signature (not checked)",
+          "passed": false,
+          "status": "not_checked"
+        }
+      },
+      "created_at": "2026-11-19T18:47:06.865Z",
+      "evidence_byte_length": null,
+      "evidence_content_type": null,
+      "evidence_sha256": null,
+      "evidence_source": null,
+      "evidence_source_url": null,
+      "evidence_status": "empty",
+      "evidence_url": null,
+      "execution_context": {
+        "environment": "zambo.dev hosted MCP"
+      },
+      "external_evidence": [],
+      "free_limit": 0,
+      "free_remaining": 0,
+      "free_used": 0,
+      "hash_algorithm": "sha256",
+      "id": "d33fc9a7-7f3a-405f-bd98-6dce72983beb",
+      "input_hash": "sha256:b234df2956082dc15452033b037804081cf72377f3fb18e0a5383d3f9395fcf6",
+      "input_hash_layout": "zambo-json-sorted-keys-utf8-v1",
+      "job_summary": "Rejected before execution: journal_log",
+      "metadata_hash": "sha256:5e8961fec6e683151347c3cc6e63f057a35707558f6d2dd38164f0995025c3b2",
+      "output_hash": "sha256:bde6e132ba804bde34108e54152370d48aa79762e8ab50b3bf2c0636554a9ad4",
+      "provenance": null,
+      "provenance_class": "OBSERVED VIA GATEWAY",
+      "receipt_profile": "zambo-hosted-receipt/1",
+      "receipt_schema_version": "0.4",
+      "result_preview": "{\"receipt_type\":\"pre_execution_rejection\",\"executed\":false,\"outcome\":\"rejected_before_execution\",\"requested_tool\":\"journal_log\",\"arguments_received\":{\"action\":\"lost_response_probe_altered\",\"executor_identity\":\"lost-response-harness\",\"inputs\":{\"operation\":\"[private]\"}},\"input_hash\":\"sha256:b234df2956082dc15452033b037804081cf72377f3fb18e0a5383d3f9395fcf6\",\"input_hash_layout\":\"zambo-json-sorted-keys-utf8-v1\",\"error\":{\"code\":\"idempotency_conflict\",\"message\":\"This operation key is already bound to different parameters. No journal entry was added; use a new job_id for a different operation.\"}}",
+      "result_preview_integrity": "display_only_not_committed",
+      "result_preview_truncated": false,
+      "result_source": null,
+      "schema_url": "https://zambo.dev/aer-1/hosted-profile.schema.json",
+      "session_trail": [],
+      "side_effects": {
+        "declaration_hash": "sha256:dfb4412aa429d3ac637a05668c435bcc90a251363fcdd49f7b85ae4ab55b5bc9",
+        "declared": [
+          "state_write"
+        ],
+        "schema_version": "zambo-side-effects/1"
+      },
+      "signal_handle": null,
+      "steps": [
+        {
+          "completed_at": "2026-11-19T18:47:06.870Z",
+          "status": "rejected_before_execution",
+          "tool": "journal_log"
+        }
+      ],
+      "tool": {
+        "name": "journal_log",
+        "scope": "public",
+        "version": "4.1.4"
+      },
+      "tools": [
+        "journal_log"
+      ],
+      "verification_scope": "separate_sha256_commitment_and_provenance_binding_checks",
+      "verification_status": "verified"
+    },
+    "receipt_profile": "zambo-hosted-receipt/1",
+    "schema_url": "https://zambo.dev/aer-1/hosted-profile.schema.json",
+    "source_url": "https://zambo.dev/api/receipt/d33fc9a7-7f3a-405f-bd98-6dce72983beb",
+    "verification_status": "verified"
+  },
+  "http_status": 200
+}
